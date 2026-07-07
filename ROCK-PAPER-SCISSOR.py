@@ -2,7 +2,7 @@ import random
 choice = ["rock", "paper" , "scissor"]
 
 def get_choices():
-    player_choice = input( "enter your choice (rock, paper , scissor) : ")
+    player_choice = input( "enter your choice (rock, paper , scissor) : ").lower()
     computer_choice = random.choice(choice)
     choices = {"player" : player_choice , "computer" : computer_choice}
     return choices
